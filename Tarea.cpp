@@ -76,39 +76,30 @@ void numeroImpar() {
 }
 void mediaAritmetica() {
 	int numOfElements=0;
-	float totalSum;
-	vector<float> vecOfElements = {};
+	float totalSum=0;
+	float inUseNum;
+	
 
 	cout << "Vamos a sacar el promedio, primero indicame el numero de elementos a analizar\n";
 	cin >> numOfElements;
 
 	for (int i = 0;i < numOfElements;i++) {
+		cout << "Ingres tu elemento " << i + 1 << endl;
+		cin >> inUseNum;
+		totalSum = totalSum + inUseNum;
 
 
 	}
-	/*if (numOfElements < 0) {
+	cout << "El promedio de tus numeros es " << (totalSum / numOfElements);
 
-		for (int i = 0;i < numOfElements;i++) {
-			float numAdded;
-			//push_back()
-
-			cout << "Ingresa tu elemento numero " << i + 1 << endl;
-			cin >> numAdded;
-			vecOfElements.push_back(numAdded);
-
-		}
-
-
-
-
-	}*/
 	
 
 }
 
 int main() {
 	//operaNumeros();
-	numeroImpar();
+	mediaAritmetica();
+
 
 	
 
